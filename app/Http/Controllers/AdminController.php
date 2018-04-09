@@ -12,11 +12,11 @@ class AdminController extends Controller
 {
     public function home()
     {
-        $jikan = new Jikan;
-        $config = new SearchConfig(ANIME);
-        $config->setType(TYPE_TV);
-        $jikan->Search('Jojo', ANIME, 1, $config);
-        dd($jikan);
+        //$jikan = new Jikan;
+        //$config = new SearchConfig(ANIME);
+        //$config->setType(TYPE_TV);
+        //$jikan->Search('Jojo', ANIME, 1, $config);
+        //dd($jikan);
         if (Auth::user()->id !== 1) {
             return redirect()->route('/');
         }

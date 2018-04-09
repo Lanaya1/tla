@@ -28,13 +28,16 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('anime.service', function () {
             return new \App\Services\AnimeService();
         });
+        $this->app->bind('episode.service', function () {
+            return new \App\Services\EpisodeService();
+        });
 
         // Managers
-        $this->app->bind('animes.manager', function () {
-            return new \App\Repositories\AnimesManager();
+        $this->app->bind('anime.manager', function () {
+            return new \App\Repositories\AnimeManager();
         });
-        $this->app->bind('episodes.manager', function () {
-            return new \App\Repositories\EpisodesManager();
+        $this->app->bind('episode.manager', function () {
+            return new \App\Repositories\EpisodeManager();
         });
     }
 }

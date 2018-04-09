@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use App\Models\Anime;
 
-class AnimesManager {
+class AnimeManager {
 
     public function create(array $data)
     {
