@@ -24,6 +24,17 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Services
+        $this->app->bind('anime.service', function () {
+            return new \App\Services\AnimeService();
+        });
+
+        // Managers
+        $this->app->bind('animes.manager', function () {
+            return new \App\Repositories\AnimesManager();
+        });
+        $this->app->bind('episodes.manager', function () {
+            return new \App\Repositories\EpisodesManager();
+        });
     }
 }

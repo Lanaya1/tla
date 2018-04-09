@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
+    "content-hash": "82601b0e137ebb5a1142fa5589d8eef0",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -406,6 +406,41 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "jikan-me/jikan",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jikan-me/jikan.git",
+                "reference": "aa866bf8470902736f596fc5e9102d91d8eb1a95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jikan-me/jikan/zipball/aa866bf8470902736f596fc5e9102d91d8eb1a95",
+                "reference": "aa866bf8470902736f596fc5e9102d91d8eb1a95",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jikan\\": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Irfan",
+                    "email": "irfan@jikan.me"
+                }
+            ],
+            "description": "Jikan is an unofficial MyAnimeList API",
+            "time": "2018-03-24T05:09:10+00:00"
         },
         {
             "name": "laravel/framework",
